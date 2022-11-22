@@ -1,0 +1,111 @@
+/*
+    Freeddev - Stylesheet
+    Version 0.1.0
+    Copyright (c) 2022 FreedTapstry21
+*/
+
+:root {
+    --accent-color: rgb(206, 206, 206);
+    --background-color: rgb(255, 255, 255);
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    color: black;
+}
+
+h2 {
+    font-size: 18px;
+    color: black;
+}
+
+p {
+    font-size: 14px;
+    color: black;
+}
+
+footer {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+
+    line-height: 8px;
+
+    position: absolute;
+    top: 90%;
+    left: 37.5%;
+    width: 25%;
+    height: 8%;
+}
+
+footer p {
+    font-size: 11px;
+}
+
+/* Containers */
+.parent {
+    margin: 1px;
+}
+
+.child {
+    margin: 1px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Menu classes */
+
+.menu {
+    color: black;
+    padding: 5px;
+
+    position: static;
+    top: 2%;
+    left: 25%;
+    height: 5%;
+    width: 50%;
+}
+
+.menu a {
+    margin: 3px;
+
+    font-size: 18px;
+
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+
+    animation: menu_unhover 0.4s;
+    padding: 3px;
+}
+
+.menu a:hover {
+    animation: menu_hover 0.4s;
+    padding: 10px;
+
+    background-color: var(--accent-color);
+}
+
+/* Custom classes */
+.wallpaper {
+    background-color: var(--background-color);
+}
+
+/* Animations */
+@keyframes menu_hover {
+    0% {padding: 3px; background-color: white;}
+    100% {padding: 10px; background-color: var(--accent-color);}
+}
+
+@keyframes menu_unhover {
+    0% {padding: 10px; background-color: var(--accent-color);}
+    100% {padding: 3px; background-color: white;}
+}
