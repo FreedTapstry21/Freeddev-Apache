@@ -4,8 +4,8 @@
     Copyright (c) 2022 FreedTapstry21
 */
 
-if (window.localStorage.getItem("view-mode") == "") {window.localStorage.setItem("view-mode", "Light mode");}
-if (window.localStorage.getItem("view-mode-class") == "") {window.localStorage.setItem("view-mode-class", "wallpaper dark");}
+if (window.localStorage.getItem("view-mode") == null) {window.localStorage.setItem("view-mode", "Light mode");}
+if (window.localStorage.getItem("view-mode-class") == null) {window.localStorage.setItem("view-mode-class", "wallpaper dark");}
 
 document.getElementById("body").className = window.localStorage.getItem("view-mode-class");
 document.getElementById("view-switch").innerText = window.localStorage.getItem("view-mode");
