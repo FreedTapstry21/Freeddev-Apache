@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <title>Freeddev - Socials</title>
+          <link rel="stylesheet" href="content/style.css">
+          <link rel="icon" type="image/x-icon" href="content/favicon.ico">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
+     <body class="preload">
+          <div class="parent center">
+               <div class="child menu">
+                    <p>
+                         <a href="home.html">Home</a>
+                         <a href="about.html">About Me</a>
+                         <a href="socials.html" class="active">Socials</a>
+                         <b id="menu-div"> | </b>
+                         <button id="view-switch">Light mode</button>
+                    </p>
+               </div>
+          </div>
+
+          <div class="parent center">
+               <div class="child">
+                    <img src="content/img/phone.png" height="64"></img>
+                    <h1>Socials</h1>
+                    <p>from GitHub to Reddit.</p>
+               </div>
+          </div>
+
+          <ln-br></ln-br>
+
+          <div class="parent center">
+               <div class="child">
+                    <h2>GitHub</h2>
+                    <p>the place where all my open-source projects are located.</p>
+                    <p>GitHub: FreedTapstry21</p>
+                    <a href="https://github.com/FreedTapstry21"><img src="content/img/GitHub-Light.png" height="48" id="github-logo"></img></a>
+               </div>
+          </div>
+
+          <ln-br></ln-br>
+
+          <div class="parent center">
+               <div class="child">
+                    <h2>Discord</h2>
+                    <p>the place where you can chat and hang out with me.</p>
+                    <p>I am currently working on a Discord server. Don't know when it will be done tho.</p>
+                    <p>Discord: FreedTapstry21#0041</p>
+                    <a href="https://discord.com"><img src="content/img/Discord.png" height="48"></img></a>
+               </div>
+          </div>
+
+          <ln-br></ln-br>
+
+          <div class="parent center">
+               <div class="child">
+                    <h2>Reddit</h2>
+                    <p>the place where almost everything is possible.</p>
+                    <p>Reddit: FreedTapstry</p>
+                    <a href="https://reddit.com/user/FreedTapstry"><img src="content/img/Reddit.png" height="48"></img></a>
+               </div>
+          </div>
+
+          <ln-br></ln-br>
+
+          <footer id="footer">
+               <div class="parent center">
+                    <div class="child">
+                         <p>Freeddev</p>
+                         <p>Copyright (c) 2022 FreedTapstry21</p>
+                    </div>
+               </div>
+          </footer>
+
+          <ln-br></ln-br>
+
+          <script src="js/index.js"></script>
+          <script src="js/elements.js"></script>
+          <script src="js/mode.js"></script>
+          <script>
+            if (window.localStorage.getItem("view-mode") == "Light mode") {
+                 document.getElementById("github-logo").src = "content/img/GitHub-Light.png";
+            }
+            if (window.localStorage.getItem("view-mode") == "Dark mode") {
+                 document.getElementById("github-logo").src = "content/img/GitHub-Dark.png";
+            }
+       </script>
+     </body>
+</html>

@@ -11,8 +11,8 @@
                <div class="child menu">
                     <p>
                          <a href="home.html">Home</a>
-                         <a href="projects.html" class="active">Projects</a>
-                         <a href="about.html">About Me</a>
+                         <a href="about.html" class="active">About Me</a>
+                         <a href="socials.html">Socials</a>
                          <b id="menu-div"> | </b>
                          <button id="view-switch">Light mode</button>
                     </p>
@@ -22,7 +22,7 @@
           <div class="parent center">
                <div class="child">
                     <img src="content/img/Freed-MC-Head.png" height="64"></img>
-                    <h1>Hey there,</h1>
+                    <h1>Hey there</h1>
                     <p>I am FreedTapstry21.</p>
                </div>
           </div>
@@ -47,7 +47,7 @@
                          I do a lot with programming and Linux. <br>
                          Some of the programming languages I know are Python, HTML, CSS and some Javascript. <br>
                          There are also some programming languages which I am still learning like Rust and C. <br>
-                         I create my projects on my own and you can check them out at <a href="projects.html">Projects</a> or check out my <a href="https://github.com/FreedTapstry21">GitHub</a>.
+                         I create my projects on my own and you can check them out at my <a href="https://github.com/FreedTapstry21">GitHub</a>.
                     </p>
                </div>
           </div>
@@ -57,8 +57,8 @@
           <div class="parent center">
                <div class="child">
                     <h2>Connections</h2>
-                    <p>
-                         <a href="https://github.com/FreedTapstry21" height="48"><img src="content/img/GitHub-Light.png" height="48" id="github-logo"></img></a>
+                    <p class="small-button">
+                         For all my social media pages, please look at my <a href="socials.html">socials</a>.
                     </p>
                </div>
           </div>
@@ -79,13 +79,5 @@
           <script src="js/index.js"></script>
           <script src="js/elements.js"></script>
           <script src="js/mode.js"></script>
-          <script>
-               if (window.localStorage.getItem("view-mode") == "Light mode") {
-                    document.getElementById("github-logo").src = "content/img/GitHub-Light.png";
-               }
-               if (window.localStorage.getItem("view-mode") == "Dark mode") {
-                    document.getElementById("github-logo").src = "content/img/GitHub-Dark.png";
-               }
-          </script>
      </body>
 </html>
