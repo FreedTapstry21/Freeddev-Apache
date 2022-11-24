@@ -1,27 +1,29 @@
 /*
     Freeddev Dark/Light mode switcher
-    Version 1.4
+    Version 1.4.1
     Copyright (c) 2022 FreedTapstry21
 */
 
+/* Checks if localStorage is set or unset */
 if (window.localStorage.getItem("view-mode") == null) {window.localStorage.setItem("view-mode", "Light mode");}
 if (window.localStorage.getItem("view-mode-class") == null) {window.localStorage.setItem("view-mode-class", "dark");}
 
+/* Compatibility layer */
 if (window.localStorage.getItem("view-mode-class") == "wallpaper dark") {window.localStorage.setItem("view-mode-class", "dark");}
 if (window.localStorage.getItem("view-mode-class") == "wallpaper light") {window.localStorage.setItem("view-mode-class", "light");}
 
-document.body.classList.add("wallpaper");
+/* Loads dark/light theme */
 document.body.classList.add(window.localStorage.getItem("view-mode-class"));
 document.getElementById("view-switch").innerText = window.localStorage.getItem("view-mode");
 
-
+/* Switches modes when button with an id of "view-switch" is pressed */
 document.getElementById("view-switch").onclick = function () {
-    if (document.getElementById("view-switch").innerText == "Dark mode") {
+    if (window.localStorage.getItem("view-mode") == "Dark mode") {
         window.localStorage.setItem("view-mode", "Light mode");
         window.localStorage.setItem("view-mode-class", "dark");
         window.location = window.location;
     }
-    if (document.getElementById("view-switch").innerText == "Light mode") {
+    if (window.localStorage.getItem("view-mode") == "Light mode") {
         window.localStorage.setItem("view-mode", "Dark mode");
         window.localStorage.setItem("view-mode-class", "light");
         window.location = window.location;
