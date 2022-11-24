@@ -31,6 +31,6 @@ if (window.innerWidth < 1000) {
     Add animations
 */
 
-setTimeout(function(){
+setTimeout(function () {
     document.body.classList.remove("preload");
-},500);
+}, 1000);
