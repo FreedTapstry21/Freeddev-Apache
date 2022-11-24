@@ -1,6 +1,6 @@
 /*
     Freeddev - Index script
-    Version 1.3-beta
+    Version 1.3
     Copyright (c) 2022 FreedTapstry21
 */
 
@@ -23,4 +23,14 @@ if (window.innerWidth < 414) {
 /* Footer */
 if (window.innerWidth < 1000) {
     document.getElementById("footer").remove();
+} else if (window.innerHeight < 700) {
+    document.getElementById("footer").remove();
 }
+
+/*
+    Add animations
+*/
+
+setTimeout(function(){
+    document.body.classList.remove("preload");
+},500);
