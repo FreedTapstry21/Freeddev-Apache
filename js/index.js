@@ -23,7 +23,7 @@ if (window.innerWidth < 414) {
 /* Footer */
 if (window.innerWidth < 1000) {
     document.getElementById("footer").remove();
-} else if (window.innerHeight < 700) {
+} else if (window.innerHeight < 450) {
     document.getElementById("footer").remove();
 }
 
