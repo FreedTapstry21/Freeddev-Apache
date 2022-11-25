@@ -1,6 +1,6 @@
 /*
     Freeddev Dark/Light mode switcher
-    Version 1.4.1
+    Version 1.4.2
     Copyright (c) 2022 FreedTapstry21
 */
 
@@ -23,7 +23,7 @@ document.getElementById("view-switch").onclick = function () {
         window.localStorage.setItem("view-mode-class", "dark");
         window.location = window.location;
     }
-    if (window.localStorage.getItem("view-mode") == "Light mode") {
+    else if (window.localStorage.getItem("view-mode") == "Light mode") {
         window.localStorage.setItem("view-mode", "Dark mode");
         window.localStorage.setItem("view-mode-class", "light");
         window.location = window.location;
