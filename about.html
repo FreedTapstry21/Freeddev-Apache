@@ -10,9 +10,9 @@
           <div class="parent center">
                <div class="child menu">
                     <p>
-                         <a href="home.html">Home</a>
-                         <a href="about.html" class="active">About Me</a>
-                         <a href="socials.html">Socials</a>
+                         <a href="home">Home</a>
+                         <a href="about" class="active">About Me</a>
+                         <a href="socials">Socials</a>
                          <b id="menu-div"> | </b>
                          <button id="view-switch">Light mode</button>
                     </p>
@@ -70,7 +70,55 @@
           <ln-br></ln-br>
 
           <div class="parent center">
-               <div class="child timeline">
+               <div class="child timeline" id="one-line-timeline">
+                    <h3>2019</h3>
+                    <p>
+                         The year of portable operating systems. <br>
+                         I started tinkering with different operating systems. <br>
+                         Especially Windows and FreeDOS. <br>
+                         Back then I also discovered on how to boot Windows or FreeDOS from a USB drive. <br>
+                         I also had my first encounter with Linux on my first Raspberry Pi. <br>
+                    </p>
+
+                    <ln-br></ln-br>
+
+                    <h3>2020</h3>
+                    <p>
+                         The year of ...being home? <br>
+                         In this year I started making a lot of Minecraft servers.  <br>
+                         Thanks to this I learned about port forwarding and a bit about infrastructure. <br>
+                         I also bought my first Arduino in this year, which I liked to tinker with. <br>
+                         And not to forget, I tried to make this exact website, which back then failed. <br>
+                    </p>
+
+                    <ln-br></ln-br>
+
+                    <h3>2021</h3>
+                    <p>
+                         The year of Raspberry Pi. <br>
+                         In January 2021 I kinda destroyed my previous Raspberry Pi so I bought a new one. <br>
+                         I used this Raspberry pi as my server. And it's still online untill this day. <br>
+                         I also did a lot of small little Arduino projects in this year. <br>
+                         For example, I made a GUI for my Arduino with a mouse cursor and all. <br>
+                         Sadly, I never really used it in any kind of larger project. <br>
+                    </p>
+
+                    <ln-br></ln-br>
+
+                    <h3>2022</h3>
+                    <p>
+                         The year of Linux. <br>
+                         Around October 2021 I tried to install Zorin OS onto an external drive with no success. <br>
+                         So January 2022 I tried again, and it worked. <br>
+                         I started with Zorin OS and then started distro hopping. <br>
+                         Eventually in June 2022 I stopped at Arch Linux where I'm still at to this day. <br>
+                         I also setup 2 more servers.  <br>
+                         A Raspberry Pi 400, which I use for my VPN and personal Minecraft server. <br>
+                         And an old Acer Aspire 8943G, which I use for almost everything server related. <br>
+                    </p>
+               </div>
+
+               <div class="child timeline" id="seperate-timeline-1">
                     <h3>2019</h3>
                     <p>
                          The year of portable operating systems. <br>
@@ -93,7 +141,7 @@
                     </p>
                </div>
 
-               <div class="child timeline">
+               <div class="child timeline" id="seperate-timeline-2">
                     <h3>2020</h3>
                     <p>
                          The year of ...being home? <br>
@@ -135,5 +183,13 @@
           <script src="js/index.js"></script>
           <script src="js/elements.js"></script>
           <script src="js/mode.js"></script>
+          <script>
+               if (window.innerWidth < 600) {
+                    document.getElementById("seperate-timeline-1").remove();
+                    document.getElementById("seperate-timeline-2").remove();
+               } else {
+                    document.getElementById("one-line-timeline").remove();
+               }
+          </script>
      </body>
 </html>
