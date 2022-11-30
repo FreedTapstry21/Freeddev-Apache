@@ -1,6 +1,6 @@
 /*
     Freeddev - Custom elements
-    Version 1.4.2
+    Version 1.5
     Copyright (c) 2022 FreedTapstry21
 */
 

@@ -1,6 +1,6 @@
 /*
     Freeddev Dark/Light mode switcher
-    Version 1.4.2
+    Version 1.5
     Copyright (c) 2022 FreedTapstry21
 */
 
@@ -11,6 +11,9 @@ if (window.localStorage.getItem("view-mode-class") == null) {window.localStorage
 /* Compatibility layer */
 if (window.localStorage.getItem("view-mode-class") == "wallpaper dark") {window.localStorage.setItem("view-mode-class", "dark");}
 if (window.localStorage.getItem("view-mode-class") == "wallpaper light") {window.localStorage.setItem("view-mode-class", "light");}
+
+/* Removes fallback theme */
+document.body.classList.remove("dark");
 
 /* Loads dark/light theme */
 document.body.classList.add(window.localStorage.getItem("view-mode-class"));
