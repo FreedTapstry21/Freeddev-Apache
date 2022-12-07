@@ -3,9 +3,7 @@ Freeddev is a website developed by FreedTapstry21.
 
 ## Freeddev and Apache
 Freeddev is automatically configured to remove the .html prefix when using the Apache web server. 
-To remove this support you can do the following things:
-- Downgrade to 1.4.2
-- Edit the website
+For the non-Apache version of Freeddev, please visit `https://github.com/FreedTapstry21/Freeddev`.
 
 If you chose for the first option then go to the `Releases` tab on GitHub, scroll down to 1.4.2 and download the source code.
 However, if you chose the second option then follow the following steps:
